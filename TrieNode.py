@@ -23,7 +23,7 @@ class TrieNode:
 			return toReturn
 
 	def check_word_and_probability(self,a):
-		if not self.child.has_key(a[0]):
+		if a[0] not in self.child:
 			return (False,None)
 
 		if(len(a)==1):
